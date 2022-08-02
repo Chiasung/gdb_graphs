@@ -137,7 +137,7 @@ There are two parts to the whole process:
     Copying output to ./test.log.
 
 #### Tell gdb to print backtrace and continue without asking when it hits  a breakpoint    
-    (gdb) command
+    (gdb) define fn
     Type commands for breakpoint(s) 1-10, one per line.
     End with a line saying just "end".
     >bt
@@ -149,6 +149,8 @@ There are two parts to the whole process:
     (gdb) r
     Starting program: /home/vagrant/c_code/a.out
 
+    (gdb) fn
+    
     Once the program finishes, it would have dumped the logs to the disk in test.log    
 
 
